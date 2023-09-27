@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo img {
+    width: 80px; /* Lebar logo diubah agar lebih sesuai dengan perangkat mobile */
+}
+
+nav {
+    
+    background-color: #1a1a1a;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Untuk menangani elemen-elemen yang akan wrap pada layar kecil */
+}
+
+.nav-items a {
+    color: #be9e44;
+    text-decoration: none;
+    padding: 8px 12px; /* Ukuran padding diubah untuk tampilan mobile */
+}
+
+.nav-items button {
+    border: none;
+    padding: 8px 12px;
+    background-color: #CBB26A;
+    border-radius: 10px;
+}
+
+.nav-items button:hover {
+    background-color: #d8c690;
+}
+
+.hero {
+    width: 100%;
+    height: auto; /* Ketinggian diubah agar sesuai dengan konten */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 200px; /* Tinggi gambar diubah untuk tampilan mobile */
+    object-fit: cover;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+.hero-title {
+    position: absolute;
+    color: #e5d9b6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-title h1 {
+    font-size: 24px; /* Ukuran font diubah untuk tampilan mobile */
+    font-weight: 800;
+}
+
+.hero-title p {
+    font-size: 16px; /* Ukuran font diubah untuk tampilan mobile */
+}
+
+h2 {
+    background-color: #1a1a1a;
+    color: #be9e44;
+    text-align: center;
+    padding: 8px; /* Padding diubah untuk tampilan mobile */
+}
+
+h3 {
+    background-color: #CBB26A;
+    color: #1a1a1a;
+    text-align: center;
+    padding: 8px; /* Padding diubah untuk tampilan mobile */
+}
+
+/* Content */
+
+.content {
+    width: 97%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    height: auto;
+    padding-top: 30px;
+}
+
+.content-title {
+    text-align: center;
+    margin-bottom: 20px; /* Margin diubah untuk tampilan mobile */
+    background-color: #CBB26A;
+    padding: 8px; /* Padding diubah untuk tampilan mobile */
+}
+
+.film-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.film-title {
+    color: #CBB26A;
+    font-size: 18px; 
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.content-img {
+    width: 160px; 
+    height: 160px;
+    border-radius: 10%;
+    overflow: hidden;
+    border: white solid 5px;
+}
+
+.content-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    width: 100%;
+    background-color: #be9e44;;
+    color: #1a1a1a;
+    padding: 5px;
+    text-align: center;
+    z-index: +1;
+    margin: 5px;
+}
+
+@media only screen and (min-width: 00px) {
+    .content {
+        width: 97%;
+    }
+    .about {
+        padding: 20px; 
+        font-size: 16px; 
+    }
+}
